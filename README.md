@@ -60,8 +60,8 @@
 ## 3. Create a model
 
 1. Create a Models folder in your main project
-2. Create a new class representing a table on your database
-3. Change the visibility to public
+2. Create a new class inside the models folder representing a table on your database
+3. Change the visibility of the class to public
 4. Define the needed properties
 5. Add `using SQLite;`
 6. Define the SQLite attributes for each properties
