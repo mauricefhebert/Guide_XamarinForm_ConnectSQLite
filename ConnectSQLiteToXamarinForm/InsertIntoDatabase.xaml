@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ConnectSQLiteToXamarinForm.InsertIntoDatabase"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <StackLayout Margin="10">
+        <Label
+            FontSize="20"
+            Text="Please enter your experience"
+            TextColor="Black" />
+        <Entry x:Name="experienceEntry" Placeholder="Experience" />
+        <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+            <Button Clicked="Btn_Cancel_Clicked" Text="Cancel" />
+            <Button Clicked="Btn_Submit_Clicked" Text="Submit" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

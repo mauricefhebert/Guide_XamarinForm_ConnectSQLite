@@ -2,7 +2,7 @@
 
 namespace ConnectSQLiteToXamarinForm.Models
 {
-    internal class Post
+    public class Post
     {
         //Create an auto incrementing ID
         [PrimaryKey, AutoIncrement]

@@ -10,12 +10,12 @@ namespace ConnectSQLiteToXamarinForm
         public App()
         {
             InitializeComponent();
-            MainPage = new MainPage();
+            MainPage = new AppShell();
         }
         public App(string databaseLocation)
         {
             InitializeComponent();
-            MainPage = new MainPage();
+            MainPage = new AppShell();
             DatabaseLocation = databaseLocation;
         }
 

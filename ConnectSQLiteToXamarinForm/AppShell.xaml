@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell
+    x:Class="ConnectSQLiteToXamarinForm.AppShell"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:ConnectSQLiteToXamarinForm">
+
+
+    <FlyoutItem Title="Write to database">
+        <ShellContent ContentTemplate="{DataTemplate views:InsertIntoDatabase}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Read from database">
+        <ShellContent ContentTemplate="{DataTemplate views:ReadFromDatabase}" />
+    </FlyoutItem>
+</Shell>
