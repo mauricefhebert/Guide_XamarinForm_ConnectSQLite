@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 using Foundation;
@@ -23,7 +24,13 @@ namespace ConnectSQLiteToXamarinForm.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+            //Define the Database name
+            string dbName = "name_db.sqlite";
+            //Define the folder where the database will be store on the device
+            string folderPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "..", "Library");
+            //Combine the string
+            string fullPath = Path.Combine(folderPath, dbName);
+            LoadApplication(new App(fullPath));
 
             return base.FinishedLaunching(app, options);
         }
